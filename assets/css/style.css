@@ -146,13 +146,16 @@ main {
         height: 100%;
       }
     }
-    .recipe_summary {
+    .recipe_summary_container {
       background-color: var(--gb-lighter);
-      padding: 1rem 0rem 1rem 2.5rem;
-      flex-direction: column;
-      gap: 1rem;
+      padding: 1rem 2.5rem 1rem 2.5rem;
       h3 {
-        padding: 1rem 0 1rem 2.5rem;
+        padding-bottom: 1rem;
+      }
+      .recipe_summary {
+        background-color: var(--gb-lighter);
+        flex-direction: column;
+        gap: 1rem;
       }
     }
   }
@@ -176,13 +179,15 @@ main {
       h2 {
         font-size: 2rem;
       }
-      h2::after {
-        content: " (Dolce Tradizionale)";
-      }
-      .recipe_summary {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+      .recipe_summary_container {
+        h2::after {
+          content: " (Dolce Tradizionale)";
+        }
+        .recipe_summary {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
       }
     }
   }
