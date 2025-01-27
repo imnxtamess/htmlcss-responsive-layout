@@ -261,6 +261,28 @@ footer {
 /* #endregion main*/
 
 /* #region mediaqueries */
+
+@media screen and (min-width: 576px) {
+  main {
+    .useful_links {
+      .row {
+        .col-2 {
+          .socials_container {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .presentation {
+      img {
+        display: inline;
+        float: left;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   header {
     h1 {
@@ -289,26 +311,12 @@ footer {
       }
     }
     .useful_links {
-      .row {
-        .col-2 {
-          .socials_container {
-            width: 100%;
-          }
-        }
-      }
       #banner {
         display: block;
         margin-top: 2rem;
         img {
           width: 100%;
         }
-      }
-    }
-    .presentation {
-      img {
-        display: inline;
-        float: left;
-        margin-right: 1rem;
       }
     }
   }
