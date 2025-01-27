@@ -164,7 +164,9 @@ main {
         padding-bottom: 1rem;
       }
     }
-  } /*SUMMARY END*/
+  }
+
+  /*SUMMARY END*/
 
   .useful_links {
     padding: 2rem 0;
@@ -202,6 +204,30 @@ main {
     }
     #banner {
       display: none;
+    }
+  }
+
+  /*USEFUL LINKS END*/
+
+  .presentation {
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    hr {
+      border-color: var(--gb-primary);
+      width: 6rem;
+      margin-bottom: 1rem;
+    }
+    img {
+      display: block;
+      margin: auto;
+      width: 23rem;
+    }
+    p {
+      margin-top: 1rem;
+      margin: bottom 2rem;
+      line-height: 2rem;
     }
   }
 }
@@ -250,6 +276,13 @@ main {
         img {
           width: 100%;
         }
+      }
+    }
+    .presentation {
+      img {
+        display: inline;
+        float: left;
+        margin-right: 1rem;
       }
     }
   }
