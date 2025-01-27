@@ -180,10 +180,10 @@ main {
       h2 {
         font-size: 2rem;
       }
+      h2::after {
+        content: " (Dolce Tradizionale)";
+      }
       .recipe_summary_container {
-        h2::after {
-          content: " (Dolce Tradizionale)";
-        }
         .recipe_summary {
           flex-direction: row;
           flex-wrap: wrap;
@@ -206,27 +206,15 @@ main {
       }
       .col-8-xl {
         width: calc(100% / 12 * 8);
-        .video-container {
-          margin-top: 1rem;
-          position: relative;
-          padding-bottom: 56.25%; /* 16:9 */
-          height: 0;
-        }
-        .video-container iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
       }
       .col-4-xl {
         width: calc(100% / 12 * 4);
         margin-top: 1rem;
         .recipe_summary_container {
-          padding-left: 1rem;
-          h2::after {
-            content: " (Dolce Tradizionale)";
+          height: 100%;
+          padding-left: 2rem;
+          h3 {
+            padding: 2rem 0;
           }
           .recipe_summary {
             flex-direction: column;
