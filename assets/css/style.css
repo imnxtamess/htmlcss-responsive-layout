@@ -24,6 +24,11 @@ img {
 .d-flex {
   display: flex;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* #endregion common */
 
 /* #region layout */
@@ -168,6 +173,7 @@ main {
       .col-2 {
         padding: 0;
         .socials_container {
+          width: 3rem;
           background-color: var(--gb-lighter);
           padding: 0.8rem;
           border-radius: 20px;
@@ -227,6 +233,15 @@ main {
         }
       }
     }
+    .useful_links {
+      .row {
+        .col-2 {
+          .socials_container {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -254,6 +269,17 @@ main {
           }
           .recipe_summary {
             flex-direction: column;
+          }
+        }
+      }
+    }
+    .useful_links {
+      .row {
+        .col-2 {
+          .socials_container {
+            strong {
+              display: inline;
+            }
           }
         }
       }
