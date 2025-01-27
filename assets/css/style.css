@@ -117,7 +117,7 @@ header {
 main {
   background-color: var(--gb-light);
   .summary {
-    box-shadow: 0px 10px 20px 0px var(--gb-light-contrast);
+    box-shadow: 0px 10px 20px -20px var(--gb-light-contrast);
     .category {
       display: inline-block;
       color: var(--gb-light-contrast);
@@ -165,6 +165,25 @@ main {
     h1 {
       text-align: left;
       margin-left: 1.5rem;
+    }
+  }
+  main {
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+    .summary {
+      h2 {
+        font-size: 2rem;
+      }
+      h2::after {
+        content: " (Dolce Tradizionale)";
+      }
+      .recipe_summary {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
     }
   }
 }
