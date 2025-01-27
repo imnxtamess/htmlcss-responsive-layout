@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --gb-primary: #ff9614;
+  --gb-secondary: #4e3969;
+  --gb-light: #f6f5f3;
+  --gb-lighter: #ffffff;
+  --gb-dark: #010101;
+}
 /* #endregion common */
 
 /* #region column utilities */
@@ -68,3 +75,29 @@
 }
 
 /* #endregion column utilities */
+
+/* #region header */
+header {
+  h1 {
+    font-family: "Nerko One", serif;
+    color: var(--gb-primary);
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 1rem;
+  }
+}
+/* #endregion header*/
+
+/* #region mediaqueries */
+@media screen and (min-width: 768px) {
+  header {
+    h1 {
+      text-align: left;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+/* #endregion mediaqueries */
