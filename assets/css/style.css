@@ -159,8 +159,44 @@ main {
         padding-bottom: 1rem;
       }
     }
+  } /*SUMMARY END*/
+
+  .useful_links {
+    padding: 2rem 0;
+    .row {
+      justify-content: space-between;
+      .col-2 {
+        padding: 0;
+        .socials_container {
+          background-color: var(--gb-lighter);
+          padding: 0.8rem;
+          border-radius: 20px;
+          box-shadow: 0 0 10px var(--gb-light-contrast);
+          text-align: center;
+          #fb {
+            color: #1a77f3;
+          }
+          #x {
+            color: #009eff;
+          }
+          #ig {
+            color: #e982a8;
+          }
+          #pint {
+            color: #e62424;
+          }
+          #yt {
+            color: #e62222;
+          }
+          strong {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
+
 /* #endregion main*/
 
 /* #region mediaqueries */
